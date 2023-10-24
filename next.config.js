@@ -16,6 +16,11 @@ const nextConfig = {
 	async rewrites() {
 		return [
 			{
+				source: '/api/:path*',
+				destination:
+					'https://responsible-food-production.up.railway.app/api/:path*'
+			},
+			{
 				source: '/uploads/:path*',
 				destination:
 					'https://responsible-food-production.up.railway.app/uploads/:path*'
