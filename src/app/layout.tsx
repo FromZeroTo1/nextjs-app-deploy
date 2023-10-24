@@ -5,7 +5,6 @@ import Header from '@/app/layout/header/Header'
 import '@/assets/styles/globals.scss'
 import '@/assets/styles/normalize.scss'
 import '@/assets/styles/react-select.scss'
-import { getSiteUrl } from '@/config/url.config'
 import { SITE_NAME } from '@/constants/seo.constants'
 import Providers from '@/providers/Providers'
 
@@ -17,7 +16,6 @@ export const metadata = {
 		absolute: SITE_NAME,
 		template: `%s | ${SITE_NAME}`
 	},
-	metadataBase: new URL(getSiteUrl()),
 	openGraph: {
 		type: 'website',
 		siteName: SITE_NAME,
