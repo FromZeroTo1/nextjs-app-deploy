@@ -17,7 +17,8 @@ const nextConfig = {
 		return [
 			{
 				source: '/uploads/:path*',
-				destination: 'https://responsible-food-production.up.railway.app/uploads/:path*'
+				destination:
+					'https://responsible-food-production.up.railway.app/uploads/:path*'
 			}
 		]
 	}
