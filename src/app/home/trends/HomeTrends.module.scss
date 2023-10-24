@@ -1,0 +1,15 @@
+.wrapper {
+	padding-left: 100px;
+
+	.heading{
+		@apply text-center;
+		margin-bottom: 50px;
+	}
+
+	.slider {
+		> div:last-child {
+			padding-right: 100px;
+			@apply flex justify-between mt-5;
+		}
+	}
+}

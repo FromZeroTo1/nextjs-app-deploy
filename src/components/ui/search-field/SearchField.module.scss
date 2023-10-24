@@ -1,0 +1,7 @@
+.search{
+	@apply border-b-2 border-solid border-primary/20 pb-1.5;
+
+	input{
+		@apply outline-none leading-5;
+	}
+}

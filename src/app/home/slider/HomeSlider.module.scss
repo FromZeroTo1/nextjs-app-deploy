@@ -1,0 +1,20 @@
+.wrapper {
+	padding-left: 100px;
+	margin-bottom: 200px;
+	
+	.top {
+		@apply relative flex justify-center items-center;
+		margin-bottom: 50px;
+
+		.link {
+			@apply absolute right-0;
+		}
+	}
+
+	.slider {
+		> div:last-child {
+			@apply flex items-center justify-between w-full mt-5;
+			padding-right: 100px;
+		}
+	}
+}

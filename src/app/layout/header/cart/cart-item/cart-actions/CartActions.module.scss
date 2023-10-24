@@ -1,0 +1,27 @@
+.wrapper {
+	@apply flex items-center justify-between;
+
+	.actions {
+		@apply flex gap-2.5;
+
+		.quantity{
+			min-width: 25px;
+			@apply text-center;
+		}
+	}
+
+	.btns {
+		@apply flex items-center;
+		gap: 30px;
+
+		.btn{
+			@apply flex items-center;
+			gap: 5px;
+
+			> span{
+				@apply text-xs;
+				letter-spacing: 0.26px;
+			}
+		}
+	}
+}

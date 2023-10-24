@@ -1,0 +1,14 @@
+.fill {
+	max-width: 650px;
+	min-width: 460px;
+	@apply flex flex-col;
+
+	.value {
+		@apply text-primary opacity-60;
+	}
+
+	.btn {
+		@apply font-medium;
+		margin-top: 15px;
+	}
+}

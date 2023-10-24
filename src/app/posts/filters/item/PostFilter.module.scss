@@ -1,0 +1,5 @@
+.item{
+	padding: 5px 10px;
+	@apply transition-colors border border-solid border-primary-green text-base font-medium hover:bg-primary-green;
+	border-radius: 30px;
+}

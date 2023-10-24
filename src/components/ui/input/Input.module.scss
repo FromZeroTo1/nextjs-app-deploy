@@ -1,0 +1,12 @@
+.wrapper{
+	@apply w-full flex flex-col;
+
+	.label{
+		@apply text-xs text-primary/50 mb-0.5;
+		letter-spacing: 0.26px;
+	}
+
+	.input{
+		@apply border-b-2 border-primary/20 border-solid text-primary/60 py-0.5 focus:outline-none;
+	}
+}

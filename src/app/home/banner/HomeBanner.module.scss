@@ -1,0 +1,11 @@
+.text{
+	-webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #bdf270;
+}
+.banner{
+	@apply bg-no-repeat bg-cover bg-center;
+	min-height: 800px;
+	margin-bottom: 200px;
+	margin-top: 30px;
+	padding: 0 100px;
+}

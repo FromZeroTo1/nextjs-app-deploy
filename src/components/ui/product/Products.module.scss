@@ -1,0 +1,9 @@
+.section{
+	@apply w-full;
+
+	.products{
+		@apply grid grid-cols-4;
+		row-gap: 50px;
+		column-gap: 40px;
+	}
+}

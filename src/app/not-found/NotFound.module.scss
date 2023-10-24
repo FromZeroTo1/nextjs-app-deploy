@@ -1,0 +1,17 @@
+.wrapper{
+	@apply w-full min-h-screen flex justify-center items-center;
+
+	.fill{
+		max-width: 535px;
+		@apply w-full flex flex-col items-center;
+
+		.text{
+			@apply text-primary opacity-90 text-center;
+			margin: 80px 0 40px;
+		}
+	
+		.problem{
+			@apply mt-5 text-sm;
+		}
+	}
+}

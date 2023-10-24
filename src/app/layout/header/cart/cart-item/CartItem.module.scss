@@ -1,0 +1,40 @@
+.item {
+	@apply flex gap-5;
+
+	.preview {
+		width: 120px;
+		height: 150px;
+	}
+
+	.fill {
+		width: calc(100% - 140px);
+		@apply flex flex-col justify-between py-2.5;
+
+		.info {
+			@apply w-full;
+
+			.heading {
+				@apply flex items-center justify-between;
+
+				.price {
+					@apply text-primary/70;
+				}
+
+				.salePrice {
+					@apply line-through mr-2.5 text-primary/30;
+				}
+			}
+
+			.center {
+				@apply flex flex-col;
+				gap: 5px;
+				margin-top: 15px;
+
+				> span {
+					@apply text-xs text-primary/60;
+					letter-spacing: 0.26px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.wrapper {
+	max-width: 250px;
+	@apply w-full flex flex-col gap-5;
+
+	.text {
+		@apply text-sm text-primary/80;
+	}
+}

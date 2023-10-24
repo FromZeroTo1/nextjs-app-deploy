@@ -1,0 +1,32 @@
+.fill {
+	max-width: 650px;
+	min-width: 460px;
+	@apply flex flex-col;
+
+	.form {
+		max-width: 460px;
+		@apply w-full flex flex-col;
+
+		.row {
+			@apply flex items-center justify-start;
+
+			.input {
+				@apply mr-2.5 w-4 h-4 border-gray border-2 border-solid outline-none cursor-pointer;
+			}
+
+			.label {
+				@apply text-primary opacity-30;
+			}
+
+			& + .row {
+				@apply mt-2.5;
+			}
+		}
+
+		.error {
+			@apply text-red text-xs;
+			margin-top: 15px;
+			letter-spacing: 0.26px;
+		}
+	}
+}

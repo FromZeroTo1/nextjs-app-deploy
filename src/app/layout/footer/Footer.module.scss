@@ -1,0 +1,9 @@
+.wrapper {
+	@apply flex justify-between;
+	padding: 0 100px 70px;
+
+	.subscribe {
+		max-width: 400px;
+		@apply w-full;
+	}
+}

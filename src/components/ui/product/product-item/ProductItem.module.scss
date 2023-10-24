@@ -1,0 +1,68 @@
+.wrapper {
+	@apply w-full h-full flex flex-col items-start justify-between animate-scaleIn;
+
+	.preview {
+		@apply relative w-full;
+
+		.sale {
+			@apply absolute left-0 top-0 bg-white font-medium p-2.5;
+		}
+
+		.favorite {
+			@apply absolute top-2.5 right-2.5 z-1;
+		}
+
+		.cart {
+			@apply absolute bottom-2.5 right-2.5 z-1;
+		}
+
+		.image {
+			@apply inline-block w-full;
+		}
+	}
+
+	.info {
+		@apply w-full;
+
+		.fill {
+			@apply p-2.5 flex flex-col;
+			gap: 15px;
+		}
+
+		.list {
+			@apply flex flex-wrap;
+		}
+
+		.dimension {
+			@apply inline-block text-lg;
+
+			& + .dimension {
+				@apply ml-1;
+			}
+		}
+
+		.color {
+			@apply inline-block w-4 h-4;
+
+			& + .color {
+				@apply ml-3;
+			}
+		}
+
+		.bottom{
+			@apply mt-3.5;
+
+			.name{
+				@apply mb-0.5;
+			}
+
+			.price{
+				@apply text-sm text-opacity-70 text-primary;
+			}
+
+			.salePrice{
+				@apply line-through text-sm leading-4 mr-2.5 inline-block text-opacity-30 text-primary;
+			}
+		}
+	}
+}

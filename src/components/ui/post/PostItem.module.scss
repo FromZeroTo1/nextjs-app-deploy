@@ -1,0 +1,18 @@
+.wrapper {
+	@apply w-full h-full flex flex-col;
+	gap: 15px;
+
+	.preview {
+		@apply h-full;
+
+		> a{
+			@apply inline-block h-full w-full relative;
+		}
+	}
+
+	.date {
+		@apply inline-block text-xs text-primary/50;
+		letter-spacing: 0.26px;
+		margin-bottom: 3px;
+	}
+}

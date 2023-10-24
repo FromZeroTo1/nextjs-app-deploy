@@ -1,0 +1,7 @@
+.wrapper{
+	@apply relative;
+
+	.badge{
+		@apply uppercase absolute bottom-2 right-3 cursor-pointer rounded-lg py-0.5 px-2 transition-colors bg-primary text-white;
+	}
+}

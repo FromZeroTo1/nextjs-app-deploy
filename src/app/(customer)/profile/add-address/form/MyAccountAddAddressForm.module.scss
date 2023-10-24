@@ -1,0 +1,25 @@
+.fill {
+	@apply flex flex-col items-start w-full;
+	max-width: 665px;
+
+	input {
+		@apply pb-1 text-primary/60 border-b-2 border-b-primary/20 focus:outline-none;
+	}
+	.full {
+		@apply w-full;
+	}
+	.half {
+		width: 50%;
+	}
+}
+.text {
+	max-width: 420px;
+	@apply w-full text-sm;
+	margin-bottom: 50px;
+}
+.form {
+	@apply flex flex-wrap gap-5;
+}
+.button{
+	margin-top: 40px;
+}

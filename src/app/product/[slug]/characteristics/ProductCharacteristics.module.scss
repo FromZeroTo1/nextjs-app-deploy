@@ -1,0 +1,25 @@
+.top {
+	@apply flex items-center justify-between;
+}
+
+.list{
+	max-width: 330px;
+	@apply w-full mt-5;
+
+	.item {
+		@apply flex items-center justify-between;
+
+		& + .item {
+			margin-top: 5px
+		}
+
+		.name {
+			@apply text-primary opacity-40 inline-block;
+		}
+
+		.value {
+			@apply text-primary opacity-80 inline-block;
+		}
+	}
+}
+

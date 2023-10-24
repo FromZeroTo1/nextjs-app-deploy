@@ -1,0 +1,49 @@
+.info {
+	max-width: 590px;
+	@apply ml-10 w-full;
+
+	.fill {
+		padding: 40px 0 120px;
+		max-width: 490px;
+		@apply w-full;
+
+		.top {
+			margin-bottom: 50px;
+
+			.box {
+				@apply flex items-center justify-between mb-5;
+			}
+
+			.name {
+				@apply italic font-medium text-3xl;
+				margin-bottom: 5px;
+			}
+
+			.bought {
+				@apply text-secondary-green text-sm inline-block mb-2.5;
+			}
+
+			.sku {
+				@apply text-xs opacity-50;
+			}
+		}
+
+		.details {
+			@apply flex flex-col items-start;
+			gap: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.content {
+		@apply border-primary/20 border-solid border-b-2 border-t-2 w-full;
+
+		&Item {
+			padding: 20px 0;
+		}
+
+		&Item + .contentItem {
+			@apply border-primary/20 border-solid border-t-2;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.item{
+	@apply flex items-center text-sm opacity-90;
+
+	& + & {
+		margin-top: 15px;
+	}
+
+	> img {
+		margin-right: 15px;
+	}
+}

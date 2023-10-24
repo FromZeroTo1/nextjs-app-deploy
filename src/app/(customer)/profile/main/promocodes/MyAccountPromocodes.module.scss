@@ -1,0 +1,29 @@
+.fill {
+	max-width: 650px;
+	min-width: 460px;
+	@apply flex flex-col;
+
+	.promocodes {
+		@apply flex justify-between items-stretch flex-wrap;
+		gap: 25px;
+
+		.promocode {
+			max-width: 295px;
+			@apply w-full p-2.5 border-primary-green border-2 border-solid;
+			border-radius: 15px;
+
+			.description {
+				@apply leading-snug;
+				margin-bottom: 5px;
+			}
+
+			.fill {
+				@apply flex items-center gap-5;
+
+				.code {
+					@apply text-3xl italic text-secondary-green;
+				}
+			}
+		}
+	}
+}

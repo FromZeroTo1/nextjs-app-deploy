@@ -1,0 +1,37 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 450px 390px 450px;
+	grid-gap: 40px;
+	height: 100%;
+	padding: 0 100px;
+	margin-bottom: 200px;
+
+	.item {
+		@apply flex flex-col justify-between gap-2.5;
+
+		.preview {
+			@apply h-full;
+
+			a {
+				@apply inline-block h-full w-full relative;
+			}
+		}
+
+		.name {
+			font-size: 20px;
+		}
+	}
+
+	.item:first-child {
+		@apply row-span-2 col-span-1;
+	}
+
+	.item:last-child {
+		@apply row-span-1;
+	}
+
+	.item:nth-child(4) {
+		@apply col-span-2 row-span-2;
+	}
+}

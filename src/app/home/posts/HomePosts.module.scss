@@ -1,0 +1,20 @@
+.wrapper{
+	padding: 0 100px;
+	margin-bottom: 200px;
+
+	.items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr;
+		grid-template-rows: repeat(2, 330px);
+		grid-gap: 40px;
+	
+		.item:nth-child(3) {
+			@apply row-span-2 col-span-1;
+		}
+		.item:last-child {
+			@apply col-span-2 row-span-1;
+		}
+	}
+}
+
+

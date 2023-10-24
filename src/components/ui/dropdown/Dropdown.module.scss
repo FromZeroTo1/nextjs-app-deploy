@@ -1,0 +1,7 @@
+.list{
+	@apply hidden pl-5;
+
+	&.active{
+		@apply flex flex-col gap-2;
+	}
+}

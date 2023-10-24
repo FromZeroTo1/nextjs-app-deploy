@@ -1,0 +1,19 @@
+.checkbox {
+	@apply flex items-center;
+
+	> span:first-child {
+		@apply h-4 w-4 border-2 border-solid bg-transparent transition-colors duration-300 ease-in-out;
+		border-color: #808082;
+
+		&.active {
+			background-color: #808082;
+			background-image: url('/images/checked.svg');
+			background-size: 9px;
+			@apply bg-no-repeat bg-center;
+		}
+	}
+
+	> span:last-child {
+		@apply ml-[5px] text-xl leading-5 font-normal;
+	}
+}

@@ -1,0 +1,19 @@
+.wrapper{
+	padding: 0 100px;
+
+	.title{
+		margin-bottom: 50px;
+	}
+
+	.subtitle{
+		margin-bottom: 15px;
+	}
+
+	.products + .products{
+		margin-top: 50px;
+	}
+
+	.not{
+		@apply text-primary opacity-70
+	}
+}

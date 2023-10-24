@@ -1,0 +1,29 @@
+.item {
+	@apply border-primary/20 border-2 border-solid overflow-hidden;
+	border-radius: 10px;
+
+	.name {
+		@apply w-full p-5 flex items-center justify-between font-medium;
+
+		&.active{
+			@apply pb-2.5;
+		}
+
+		> img {
+			@apply transition-transform;
+			transform: rotate(0);
+		}
+
+		&.active > img {
+			transform: rotate(180deg);
+		}
+	}
+
+	.description {
+		@apply h-0 transition-all overflow-hidden text-primary/90 px-5;
+
+		&.active {
+			@apply h-auto mt-2.5 pb-5;
+		}
+	}
+}

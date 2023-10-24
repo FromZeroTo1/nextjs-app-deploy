@@ -1,0 +1,19 @@
+.fill {
+	@apply flex flex-col w-full;
+	max-width: 350px;
+
+	.form{
+		@apply flex flex-wrap gap-5;
+
+		.full {
+			@apply w-full;
+		}
+		.half{
+			width: calc(50% - 10px);
+		}
+
+		input {
+			@apply pb-1 text-primary/60 border-b-2 border-b-primary/20 focus:outline-none;
+		}
+	}
+}

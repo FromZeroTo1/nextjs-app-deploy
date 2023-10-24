@@ -1,0 +1,34 @@
+.fill {
+	@apply flex flex-col w-full gap-5;
+	max-width: 650px;
+
+	.wrapper {
+		@apply flex flex-col;
+
+		& + .wrapper {
+			@apply mt-5;
+		}
+
+		.row {
+			@apply flex justify-between items-start;
+
+			.btns {
+				margin-left: 50px;
+				@apply flex flex-col items-end text-sm;
+
+				.edit{
+					@apply mb-2.5;
+				}
+			}
+		}
+
+		.comment {
+			max-width: 330px;
+			@apply w-full mt-1 text-primary/60 text-sm;
+		}
+	}
+
+	.add {
+		@apply font-medium;
+	}
+}

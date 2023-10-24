@@ -1,0 +1,12 @@
+.selectContainer {
+	@apply relative animate-opacity w-full;
+
+	> span {
+		@apply text-xs uppercase text-primary/70 block mb-1;
+	}
+}
+.error {
+	@apply inline-block text-red text-xs;
+	margin-top: 10px;
+	letter-spacing: 0.26px;
+}

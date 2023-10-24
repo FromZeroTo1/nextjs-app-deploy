@@ -1,0 +1,11 @@
+.wrapper {
+	margin: 30px 0 20px;
+	@apply flex gap-2.5 items-center;
+}
+.item {
+	@apply text-xs text-primary/60;
+	letter-spacing: 0.26px;
+}
+.separator{
+	@apply text-xs text-primary/60;
+}

@@ -1,0 +1,17 @@
+.found {
+	@apply flex flex-col;
+	margin-top: 200px;
+
+	.heading {
+		@apply mb-2.5;
+	}
+
+	.text {
+		max-width: 480px;
+		@apply w-full text-primary/90;
+	}
+
+	.button {
+		margin-top: 50px;
+	}
+}

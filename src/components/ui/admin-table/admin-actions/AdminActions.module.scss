@@ -1,0 +1,11 @@
+.actions {
+	@apply flex items-center;
+
+	> button {
+		@apply outline-none bg-transparent text-primary-green;
+
+		&:first-child {
+			@apply mr-4;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.items {
+	@apply flex items-start justify-between;
+
+	.fill {
+		max-width: 1280px;
+		@apply w-full flex flex-col gap-2.5;
+	}
+}

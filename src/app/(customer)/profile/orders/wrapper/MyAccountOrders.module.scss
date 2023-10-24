@@ -1,0 +1,18 @@
+.container {
+	padding-left: 100px;
+	max-width: 1370px;
+	@apply w-full;
+	margin: 20px 0 200px;
+
+	.wrapper {
+		margin-top: 50px;
+
+		.row {
+			@apply flex justify-between items-start;
+
+			& + .row {
+				margin-top: 100px;
+			}
+		}
+	}
+}

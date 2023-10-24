@@ -1,0 +1,14 @@
+.fill {
+	max-width: 650px;
+	min-width: 460px;
+	@apply flex flex-col;
+
+	.btn {
+		@apply font-medium;
+		margin-top: 15px;
+	}
+
+	.orders {
+		@apply flex flex-col mb-5;
+	}
+}

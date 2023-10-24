@@ -1,0 +1,32 @@
+.wrapper{
+	@apply w-full text-center;
+
+	.heading{
+		margin-bottom: 60px;
+	}
+	
+	.form{
+		@apply w-full inline-block;
+
+		.field{
+			@apply w-full border-b-2 border-solid border-primary-green py-0.5 mb-2.5 flex items-center justify-between;
+
+			input {
+				@apply w-full outline-none pr-10;
+			}
+		}
+		
+		.row{
+			@apply flex items-start;
+
+			.text{
+				@apply ml-2 text-sm text-left;
+
+				span, 
+				a{
+					@apply text-base;
+				}
+			}
+		}
+	}
+}

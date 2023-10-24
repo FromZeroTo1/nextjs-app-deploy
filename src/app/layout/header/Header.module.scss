@@ -1,0 +1,15 @@
+.marquee {
+	height: 33px;
+	@apply w-full relative overflow-hidden;
+
+	.list{
+		@apply bg-primary-green flex items-center justify-between absolute overflow-hidden animate-rolling;
+		width: 200%;
+		height: 33px;
+
+		.item{
+			width: calc(200% / 10);
+			@apply float-left font-medium;
+		}
+	}
+}

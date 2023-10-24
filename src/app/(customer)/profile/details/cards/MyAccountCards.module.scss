@@ -1,0 +1,20 @@
+.fill {
+	@apply flex flex-col w-full gap-5;
+	max-width: 650px;
+
+	.row {
+		@apply flex justify-between items-center;
+
+		.button {
+			margin-left: 60px;
+		}
+
+		.card {
+			@apply flex items-center;
+		}
+	}
+
+	.add {
+		@apply font-medium;
+	}
+}

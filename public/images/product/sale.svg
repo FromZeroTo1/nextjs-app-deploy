@@ -1,0 +1,15 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.8" cx="22" cy="22" r="21" stroke="#BDF271" stroke-width="2"/>
+<g opacity="0.7">
+<mask id="path-2-inside-1_304_45835" fill="white">
+<rect x="8" y="15" width="28" height="17" rx="1"/>
+</mask>
+<rect x="8" y="15" width="28" height="17" rx="1" fill="#83C12B" stroke="#83C12B" stroke-width="4" mask="url(#path-2-inside-1_304_45835)"/>
+<rect x="31" y="17" width="2" height="3" rx="1" fill="white"/>
+<rect x="31" y="22" width="2" height="3" rx="1" fill="white"/>
+<rect x="31" y="27" width="2" height="3" rx="1" fill="white"/>
+<path d="M18.0242 17.751C18.8717 18.4602 18.9837 19.7218 18.275 20.5688C17.5662 21.4158 16.3046 21.528 15.4571 20.8189C14.6096 20.1097 14.4976 18.8481 15.2063 18.001C15.9151 17.154 17.1767 17.0418 18.0242 17.751Z" stroke="white" stroke-width="2"/>
+<path d="M24.3992 25.7119C25.2467 26.4211 25.3587 27.6827 24.65 28.5297C23.9412 29.3768 22.6796 29.489 21.8321 28.7798C20.9846 28.0706 20.8726 26.809 21.5813 25.962C22.2901 25.1149 23.5517 25.0027 24.3992 25.7119Z" stroke="white" stroke-width="2"/>
+<rect width="15.9998" height="2.00111" rx="1" transform="matrix(0.642547 -0.766247 0.767621 0.640904 14.02 28.7539)" fill="white"/>
+</g>
+</svg>

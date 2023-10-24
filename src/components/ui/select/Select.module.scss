@@ -1,0 +1,50 @@
+.select {
+	@apply relative w-max;
+
+	> button {
+		@apply flex items-center;
+
+		> b {
+			@apply mr-2 font-semibold;
+		}
+	}
+
+	> ul {
+		@apply absolute right-0 z-2 border-2 border-solid border-primary/20 p-2.5 bg-white;
+		border-radius: 10px;
+		top: calc(100% + 1rem);
+		width: 165px;
+
+		> li {
+			@apply block w-full rounded-lg text-left text-sm leading-5;
+			transform: translateX(100%);
+			opacity: 0;
+			animation: slideInRight .5s forwards;
+
+			> button {
+				@apply text-left;
+			}
+
+			& + li {
+				@apply mt-2.5
+			}
+
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i}) {
+					animation-delay: .1s * $i
+				}
+			}
+		}
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

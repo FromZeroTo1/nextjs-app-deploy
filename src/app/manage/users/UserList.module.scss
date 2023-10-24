@@ -1,0 +1,12 @@
+.container{
+	padding: 50px 100px 0;
+
+	.wrapper{
+		@apply flex items-start justify-between;
+
+		.fill{
+			max-width: 1400px;
+			@apply w-full;
+		}
+	}
+}

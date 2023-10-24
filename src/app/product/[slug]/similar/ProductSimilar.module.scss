@@ -1,0 +1,10 @@
+.wrapper {
+	.products {
+		@apply inline-flex;
+		gap: 40px;
+
+		.product {
+			min-width: 400px;
+		}
+	}
+}

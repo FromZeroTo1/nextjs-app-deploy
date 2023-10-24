@@ -1,0 +1,38 @@
+.parent {
+	.top {
+		@apply flex items-center gap-2.5;
+
+		.open{
+			img {
+				transform: rotate(0);
+				transition: transform .3s ease-in-out;
+			}
+
+			&.active{
+				img {
+					transform: rotate(180deg)
+				}
+			}
+		}
+	}
+
+	.list {
+		@apply pl-5 hidden;
+
+		&.active {
+			@apply flex flex-col gap-2;
+		}
+
+		> li {
+			@apply text-sm font-normal;
+		}
+	}
+}
+
+.item {
+	@apply block font-medium my-3 hover:text-secondary-green transition-colors duration-200;
+
+	&.active {
+		@apply text-secondary-green cursor-default pointer-events-none;
+	}
+}

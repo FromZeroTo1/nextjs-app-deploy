@@ -1,0 +1,20 @@
+.wrapper {
+	max-width: 800px;
+	@apply fixed right-0 top-0 bottom-0 min-h-screen z-2 w-full bg-white;
+	padding: 30px 100px 40px 40px;
+	transition: transform .7s ease-in-out;
+	transform: translateX(110%);
+
+	&.active{
+		transform: translateX(0);
+	}
+
+	.heading{
+		@apply flex justify-between items-center;
+		margin-bottom: 60px;
+	}
+
+	.cart{
+		@apply flex flex-col gap-5;
+	}
+}

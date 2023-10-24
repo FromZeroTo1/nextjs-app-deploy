@@ -1,0 +1,16 @@
+.top {
+	@apply flex items-center justify-between;
+
+	.button {
+		& > img {
+			transition: rotate 0.3s;
+		}
+
+		&.show img {
+			transform: rotate(180deg);
+		}
+	}
+}
+.content {
+	@apply opacity-80 mt-5;
+}

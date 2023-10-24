@@ -1,0 +1,42 @@
+.order {
+	@apply flex items-start;
+
+	.left {
+		@apply relative pl-5 pb-5;
+
+		.sku {
+			@apply absolute left-0 bottom-0 top-0 rotate-90 text-xs;
+			letter-spacing: 0.26px;
+		}
+
+		.preview {
+			@apply relative;
+
+			.quantity {
+				@apply absolute left-0 bottom-0 right-0 mx-auto top-0 text-xs;
+				letter-spacing: 0.26px;
+			}
+		}
+	}
+
+	.info {
+		margin: 0 15px;
+
+		.status {
+			@apply mb-2.5;
+		}
+
+		.text,
+		.estimated {
+			@apply text-primary opacity-60 leading-snug text-sm;
+		}
+	}
+
+	.right {
+		@apply text-sm;
+	}
+
+	& + .order {
+		@apply mt-5;
+	}
+}
