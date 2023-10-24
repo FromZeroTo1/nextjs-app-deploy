@@ -2,7 +2,6 @@
 const nextConfig = {
 	env: {
 		SERVER_URL: process.env.SERVER_URL,
-		APP_URL: process.env.APP_URL
 	},
 	images: {
 		domains: [
@@ -15,11 +14,6 @@ const nextConfig = {
 	},
 	async rewrites() {
 		return [
-			{
-				source: '/api/:path*',
-				destination:
-					'https://responsible-food-production.up.railway.app/api/:path*'
-			},
 			{
 				source: '/uploads/:path*',
 				destination:
